@@ -80,7 +80,7 @@ window.addEventListener("load", async () => {
       langName: "Java",
       ...gitHubUrls({
         user: "LeifIsStrange",
-        repo: year => `AoC${year}`,
+        repo: year => `AoC${year % 100}`,
         path: (year, day, part) => `src/day${pad(day + 1, 2)}/Day${pad(day + 1, 2)}.java`
       })
     },
